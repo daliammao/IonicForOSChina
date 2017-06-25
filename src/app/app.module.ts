@@ -1,40 +1,60 @@
-import { NgModule, ErrorHandler } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import {ErrorHandler, NgModule} from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
+import {IonicApp, IonicErrorHandler, IonicModule} from "ionic-angular";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {MyApp} from "./app.component";
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import {StatusBar} from "@ionic-native/status-bar";
+import {SplashScreen} from "@ionic-native/splash-screen";
+import {MixingModule} from "../pages/mixing/mixing.module";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {Http, HttpModule} from "@angular/http";
+import {TweetModule} from "../pages/tweet/tweet.module";
+import {ExplortModule} from "../pages/explort/explort.module";
+import {AccountModule} from "../pages/account/account.module";
+import {LoginService} from "../pages/account/service/login.service";
+import {IonicStorageModule} from "@ionic/storage";
+import {MyCommonModule} from "../pages/common/my-common.module";
+import {InAppBrowser} from "@ionic-native/in-app-browser";
+import {NativeImageService} from "../pages/common/service/native-image.service";
 
 @NgModule({
-  declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
   imports: [
+    MyCommonModule,
+    MixingModule,
+    TweetModule,
+    ExplortModule,
+    AccountModule,
+
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: Http) => new TranslateHttpLoader(http, 'assets/i18n/', '.json'),
+        deps: [Http]
+      }
+    }),
+    IonicModule.forRoot(MyApp, {
+      tabsHideOnSubPages: 'true'
+    }),
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
+  declarations: [
+    MyApp
+  ],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
   ],
   providers: [
+    LoginService,
+    NativeImageService,
+    InAppBrowser,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class AppModule {
+}

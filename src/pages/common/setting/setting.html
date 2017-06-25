@@ -1,0 +1,46 @@
+<!--
+  Generated template for the SettingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{'COMMON.SETTING.TITLE'|translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list margin-top>
+    <ion-item-group>
+      <ion-item>
+        <h2>{{'COMMON.SETTING.CLEARCACHE'|translate}}</h2>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{'COMMON.SETTING.TWICEOUT'|translate}}</ion-label>
+        <ion-toggle [(ngModel)]="outType" (ionChange)="changeOutType()" item-right></ion-toggle>
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group margin-top>
+      <ion-item>
+        <h2>{{'COMMON.SETTING.FEEDBACK'|translate}}</h2>
+      </ion-item>
+      <ion-item (click)="goToAbout()">
+        <h2>{{'COMMON.SETTING.ABOUT'|translate}}</h2>
+      </ion-item>
+      <ion-item>
+        <h2>{{'COMMON.SETTING.UPDATE'|translate}}</h2>
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group margin-top>
+      <ion-item (click)="logout()">
+        <h2>{{'COMMON.SETTING.LOGOUT'|translate}}</h2>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

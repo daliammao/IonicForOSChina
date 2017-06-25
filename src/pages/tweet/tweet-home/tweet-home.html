@@ -1,0 +1,26 @@
+<!--
+  Generated template for the TweetHomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{'TWEET.TITLE'| translate}}</ion-title>
+  </ion-navbar>
+
+  <ion-segment [(ngModel)]="segmentIndex" #segment>
+    <ion-segment-button value="-1">
+      {{'TWEET.NEWEST'| translate}}
+    </ion-segment-button>
+    <ion-segment-button value="0">
+      {{'TWEET.HOTEST'| translate}}
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <tweet-list [hidden]="segmentIndex!='-1'" [user]="-1"></tweet-list>
+  <tweet-list [hidden]="segmentIndex!='0'" [user]="0"></tweet-list>
+</ion-content>

@@ -1,0 +1,37 @@
+{
+  "CANCEL": "取消",
+  "COMMON": {
+    "SETTING": {
+      "TITLE":"设置",
+      "CLEARCACHE":"清除缓存",
+      "TWICEOUT":"双击退出",
+      "FEEDBACK":"意见反馈",
+      "ABOUT":"关于作者",
+      "UPDATE":"检查更新",
+      "LOGOUT":"注销"
+    }
+  },
+  "MIXING": {
+    "TITLE": "综合",
+    "NEWS": "新闻",
+    "BLOG": "博客",
+    "POST": "帖子"
+  },
+  "TWEET": {
+    "TITLE": "动弹",
+    "NEWEST": "最新动弹",
+    "HOTEST": "热门动弹",
+    "MIME": "我的动弹"
+  },
+  "EXPLORT": {
+    "TITLE": "发现",
+    "COULD": "码云推荐",
+    "SOURCE": "开源软件",
+    "SCAN": "扫一扫",
+    "SHAKE": "摇一摇"
+  },
+  "ACCOUNT": {
+    "TITLE": "我的",
+    "LOGIN": "登录"
+  }
+}

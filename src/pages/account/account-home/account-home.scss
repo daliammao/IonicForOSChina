@@ -1,0 +1,44 @@
+page-account-home {
+  .user-info {
+    background-color: color($colors, primary);
+  }
+
+  .user-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    left: 12px;
+  }
+
+  .user-gender {
+    width: auto;
+    height: auto;
+    background-color: #007aff;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    left: -13px;
+    top: -5px;
+
+    ion-icon {
+      margin: 3px;
+      font-size: 9px;
+      color: white;
+    }
+  }
+
+  .user-count ion-col{
+    color: white;
+    font-size: 15px;
+  }
+
+  .fixed-content {
+    margin-top: 230px !important;
+  }
+  .scroll-content {
+    margin-top: 230px !important;
+  }
+
+}

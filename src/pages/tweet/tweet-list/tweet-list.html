@@ -1,0 +1,33 @@
+<!-- Generated template for the TweetListComponent component -->
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="下拉刷新"
+      refreshingSpinner="circles"
+      refreshingText="刷新中..."></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+
+    <ion-item *ngFor="let tweetItem of tweetItems" (click)="itemSelected(tweetItem)">
+      <p class="item-desc" [innerHTML]="tweetItem.body"></p>
+      <p>{{tweetItem.author}} • {{parseDateFromString(tweetItem.pubDate)|date:"dd hh:mm"}}</p>
+
+      <div item-right text-right>
+        <button ion-button clear>View</button>
+        <div class="item-comment">
+          <ion-icon name="albums"></ion-icon>
+          <span>{{tweetItem.commentCount}}</span>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll [enabled]="enableLoadMore" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="加载更多...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

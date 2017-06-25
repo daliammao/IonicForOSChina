@@ -1,0 +1,29 @@
+<!--
+  Generated template for MixingHomePagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{'MIXING.TITLE'| translate}}</ion-title>
+  </ion-navbar>
+  <ion-segment [(ngModel)]="segmentIndex" #segment>
+    <ion-segment-button value="news">
+      {{'MIXING.NEWS'| translate}}
+    </ion-segment-button>
+    <ion-segment-button value="blog">
+      {{'MIXING.BLOG'| translate}}
+    </ion-segment-button>
+    <ion-segment-button value="post">
+      {{'MIXING.POST'| translate}}
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <news-list [hidden]="segmentIndex!='news'"></news-list>
+  <blog-list [hidden]="segmentIndex!='blog'"></blog-list>
+  <post-list [hidden]="segmentIndex!='post'"></post-list>
+</ion-content>

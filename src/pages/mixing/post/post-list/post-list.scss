@@ -1,0 +1,25 @@
+post-list {
+  .fixed-content {
+    margin-bottom: 0px !important;
+  }
+  .scroll-content {
+    margin-bottom: 0px !important;
+  }
+
+  ion-item{
+    height: 100px;
+  }
+
+  .item-desc {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:pre-wrap;
+    height: 40px;
+  }
+  .item-comment {
+    text-align:right;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+}

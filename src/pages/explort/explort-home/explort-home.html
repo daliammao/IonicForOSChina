@@ -1,0 +1,43 @@
+<!--
+  Generated template for the ExplortHomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{'EXPLORT.TITLE'| translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list margin-top>
+    <ion-item-group>
+      <ion-item>
+        <ion-icon name="cloud" item-left></ion-icon>
+        <h2>{{'EXPLORT.COULD'|translate}}</h2>
+        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item (click)="goToProject()">
+        <ion-icon name="apps" item-left></ion-icon>
+        <h2>{{'EXPLORT.SOURCE'|translate}}</h2>
+        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-right></ion-icon>
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group margin-top>
+      <ion-item (click)="scanCode()">
+        <ion-icon name="qr-scanner" item-left></ion-icon>
+        <h2>{{'EXPLORT.SCAN'|translate}}</h2>
+        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-right></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="swap" item-left></ion-icon>
+        <h2>{{'EXPLORT.SHAKE'|translate}}</h2>
+        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-right></ion-icon>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>
