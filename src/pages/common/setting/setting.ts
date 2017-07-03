@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {AlertController, App, IonicPage, NavController, NavParams, ToastController, Toggle} from "ionic-angular";
+import {AlertController, App, NavController, NavParams, ToastController, Toggle} from "ionic-angular";
 import {Storage} from "@ionic/storage";
 import {LoginService} from "../../account/service/login.service";
 import {LoginPage} from "../../account/login/login";
@@ -11,7 +11,6 @@ import {AboutPage} from "../about/about";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-setting',
   templateUrl: 'setting.html',

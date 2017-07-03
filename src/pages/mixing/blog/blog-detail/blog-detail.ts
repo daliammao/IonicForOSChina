@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {NavController, NavParams} from 'ionic-angular';
 import {BlogService} from "../../service/blog.service";
 import {BlogDetailBean} from "../../bean/blog_detial.bean";
 
@@ -9,7 +9,6 @@ import {BlogDetailBean} from "../../bean/blog_detial.bean";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-blog-detail',
   templateUrl: 'blog-detail.html',

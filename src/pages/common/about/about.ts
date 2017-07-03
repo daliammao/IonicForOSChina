@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {IonicPage, NavController, NavParams} from "ionic-angular";
+import {NavController, NavParams} from "ionic-angular";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
 
 /**
@@ -8,7 +8,6 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html',

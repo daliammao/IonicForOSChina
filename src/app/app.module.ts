@@ -18,6 +18,10 @@ import {MyCommonModule} from "../pages/common/my-common.module";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
 import {NativeImageService} from "../pages/common/service/native-image.service";
 
+export function HttpLoaderFactory(http:Http){
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   imports: [
     MyCommonModule,
@@ -31,7 +35,7 @@ import {NativeImageService} from "../pages/common/service/native-image.service";
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (http: Http) => new TranslateHttpLoader(http, 'assets/i18n/', '.json'),
+        useFactory: HttpLoaderFactory,
         deps: [Http]
       }
     }),

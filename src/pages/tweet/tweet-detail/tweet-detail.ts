@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {IonicPage, NavController, NavParams} from "ionic-angular";
+import {NavController, NavParams} from "ionic-angular";
 import {TweetService} from "../service/tweet.service";
 import {TweetDetailBean} from "../bean/tweet_detail.bean";
 
@@ -9,7 +9,6 @@ import {TweetDetailBean} from "../bean/tweet_detail.bean";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-tweet-detail',
   templateUrl: 'tweet-detail.html',

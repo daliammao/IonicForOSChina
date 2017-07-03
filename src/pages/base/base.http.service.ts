@@ -7,7 +7,7 @@ import "rxjs/add/operator/map";
 import "rxjs/add/operator/catch";
 
 export class BaseHttpService {
-  static CALL_HOST: string = 'http://git.oschina.net/496946423';
+  static CALL_HOST: string = 'http://localhost:8100/assets/drawable/ic_launcher.png';
 
   HOST: string = 'http://www.oschina.net';
   CLIENT_ID: string = 'BxhBNM1hwZx6eK9ranNM';

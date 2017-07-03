@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {IonicPage, NavController, NavParams} from "ionic-angular";
+import {NavController, NavParams} from "ionic-angular";
 import {NewsService} from "../../service/news.service";
 import {NewsDetailBean} from "../../bean/news_detail.bean";
 
@@ -9,7 +9,6 @@ import {NewsDetailBean} from "../../bean/news_detail.bean";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-news-detail',
   templateUrl: 'news-detail.html',

@@ -1,5 +1,5 @@
 import {Component, ViewChild} from "@angular/core";
-import {FabContainer, IonicPage, NavController, NavParams} from "ionic-angular";
+import {FabContainer, NavController, NavParams} from "ionic-angular";
 import {TweetPubComponent} from "../../tweet/tweet-pub/tweet-pub";
 
 /**
@@ -8,7 +8,6 @@ import {TweetPubComponent} from "../../tweet/tweet-pub/tweet-pub";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-publish-home',
   templateUrl: 'publish-home.html',

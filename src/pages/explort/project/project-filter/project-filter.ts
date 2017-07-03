@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, ViewController} from 'ionic-angular';
+import {ViewController} from 'ionic-angular';
 import {ProjectTypeItemBean} from "../../bean/project-catalog.bean";
 import {ProjectService} from "../../service/project.service";
 
@@ -9,7 +9,6 @@ import {ProjectService} from "../../service/project.service";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-project-filter',
   templateUrl: 'project-filter.html',

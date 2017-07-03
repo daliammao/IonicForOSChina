@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {IonicPage, NavController, NavParams, Tabs} from 'ionic-angular';
+import {NavController, NavParams, Tabs} from 'ionic-angular';
 import {MixingHomePage} from "../../mixing/mixing-home/mixing-home";
 import {TweetHomePage} from "../../tweet/tweet-home/tweet-home";
 import {ExplortHomePage} from "../../explort/explort-home/explort-home";
@@ -12,7 +12,6 @@ import {PublishHomePage} from "../publish-home/publish-home";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',

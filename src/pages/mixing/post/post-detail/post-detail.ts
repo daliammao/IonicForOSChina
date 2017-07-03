@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import {PostService} from "../../service/post.service";
 import {PostDetailBean} from "../../bean/post_detail.bean";
 
@@ -9,7 +9,6 @@ import {PostDetailBean} from "../../bean/post_detail.bean";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-post-detail',
   templateUrl: 'post-detail.html',

@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {IonicPage, NavController, NavParams, ToastController} from "ionic-angular";
+import {NavController, NavParams, ToastController} from "ionic-angular";
 import {ProjectHomePage} from "../project/project-home/project-home";
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 
@@ -9,7 +9,6 @@ import {BarcodeScanner} from "@ionic-native/barcode-scanner";
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
-@IonicPage()
 @Component({
   selector: 'page-explort-home',
   templateUrl: 'explort-home.html',
