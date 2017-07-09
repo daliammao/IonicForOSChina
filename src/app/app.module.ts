@@ -15,8 +15,8 @@ import {AccountModule} from "../pages/account/account.module";
 import {LoginService} from "../pages/account/service/login.service";
 import {IonicStorageModule} from "@ionic/storage";
 import {MyCommonModule} from "../pages/common/my-common.module";
-import {InAppBrowser} from "@ionic-native/in-app-browser";
 import {NativeImageService} from "../pages/common/service/native-image.service";
+import {ThemeableBrowser} from "@ionic-native/themeable-browser";
 
 export function HttpLoaderFactory(http:Http){
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -54,7 +54,7 @@ export function HttpLoaderFactory(http:Http){
   providers: [
     LoginService,
     NativeImageService,
-    InAppBrowser,
+    ThemeableBrowser,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
